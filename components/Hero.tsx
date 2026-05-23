@@ -41,7 +41,7 @@ export default function Hero() {
 
       <div className="container-px relative">
         <div className="grid items-end gap-12 md:grid-cols-12 md:gap-10">
-          <div className="md:col-span-7 lg:col-span-8">
+          <div className="order-2 md:order-1 md:col-span-7 lg:col-span-8">
             <div
               className={`flex items-center gap-3 transition-all duration-700 ${
                 mounted
@@ -131,7 +131,7 @@ export default function Hero() {
           </div>
 
           <div
-            className={`md:col-span-5 lg:col-span-4 transition-all delay-200 duration-700 ${
+            className={`order-1 mx-auto w-full max-w-[280px] md:order-2 md:mx-0 md:max-w-none md:col-span-5 lg:col-span-4 transition-all delay-200 duration-700 ${
               mounted
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
