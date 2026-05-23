@@ -16,7 +16,7 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: #fff; color: var(--ink);
     font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-    font-size: 10pt; line-height: 1.3; -webkit-font-smoothing: antialiased; }
+    font-size: 10pt; line-height: 1.4; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
@@ -30,61 +30,62 @@
 
   header {
     display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-    padding-bottom: 6px; border-bottom: 2px solid var(--ink); margin-bottom: 8px;
+    padding-bottom: 8px; border-bottom: 2px solid var(--ink); margin-bottom: 10px;
   }
-  h1 { font-size: 20pt; margin: 0; letter-spacing: -0.01em; }
+  h1 { font-size: 22pt; margin: 0; letter-spacing: -0.01em; }
   .contact { font-size: 9pt; color: var(--sub); text-align: right; }
   .contact span + span::before { content: " · "; color: var(--line); margin: 0 4px; }
   .title-tag {
-    margin-top: 1px; font-size: 9.5pt; color: var(--sub); font-weight: 500;
+    margin-top: 3px; font-size: 9.5pt; color: var(--sub); font-weight: 500;
   }
 
-  section { margin-top: 9px; }
+  section { margin-top: 14px; }
   h2 {
     font-size: 9pt; text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--accent); margin: 0 0 4px; border-bottom: 1px solid var(--line);
-    padding-bottom: 2px; font-weight: 700;
+    color: var(--accent); margin: 0 0 7px; border-bottom: 1px solid var(--line);
+    padding-bottom: 4px; font-weight: 700;
   }
 
-  .summary { font-size: 9.5pt; color: var(--ink); margin: 0; }
+  .summary { font-size: 10pt; color: var(--ink); margin: 0; }
 
-  .skills-grid { display: grid; grid-template-columns: 150px 1fr; row-gap: 2px; column-gap: 10px; }
-  .skills-grid dt { font-size: 9pt; color: var(--sub); font-weight: 600; }
-  .skills-grid dd { margin: 0; font-size: 9pt; color: var(--ink); }
+  .skills-grid { display: grid; grid-template-columns: 150px 1fr; row-gap: 5px; column-gap: 12px; }
+  .skills-grid dt { font-size: 9.5pt; color: var(--sub); font-weight: 600; }
+  .skills-grid dd { margin: 0; font-size: 9.5pt; color: var(--ink); }
 
-  .role { margin-top: 6px; }
+  .role { margin-top: 10px; }
   .role-head {
     display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;
+    margin-bottom: 4px;
   }
-  .role-head .left { font-weight: 600; font-size: 10pt; }
+  .role-head .left { font-weight: 600; font-size: 10.5pt; }
   .role-head .left .co { color: var(--accent); }
   .role-head .right { font-size: 9pt; color: var(--muted); font-family: ui-monospace, "JetBrains Mono", Menlo, monospace; }
-  ul { margin: 3px 0 0; padding-left: 15px; }
-  li { margin: 1px 0; font-size: 9.5pt; }
+  ul { margin: 4px 0 0; padding-left: 16px; }
+  li { margin: 3px 0; font-size: 9.7pt; }
 
   .flagship {
-    margin-top: 5px; padding: 6px 10px; border-left: 3px solid var(--accent);
+    margin-top: 8px; padding: 9px 12px; border-left: 3px solid var(--accent);
     background: #fbf5f1;
   }
   .flagship .name {
     font-weight: 600; color: var(--ink); font-size: 10pt;
   }
   .flagship .lead {
-    font-size: 9.3pt; color: var(--sub); margin: 1px 0 3px;
+    font-size: 9.5pt; color: var(--sub); margin: 3px 0 5px;
   }
-  .flagship ul li { font-size: 9.3pt; }
+  .flagship ul li { font-size: 9.5pt; margin: 3px 0; }
   .tech {
-    margin-top: 4px; font-size: 8.5pt; color: var(--muted);
+    margin-top: 6px; font-size: 8.7pt; color: var(--muted);
     font-family: ui-monospace, "JetBrains Mono", Menlo, monospace;
   }
   .tech b { color: var(--sub); font-weight: 600; }
 
-  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 14px; }
-  .proj { font-size: 9.3pt; }
-  .proj .name { font-weight: 600; color: var(--ink); }
-  .proj .name .tag { color: var(--accent); font-weight: 600; font-size: 8pt; margin-left: 4px; }
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; }
+  .proj { font-size: 9.5pt; line-height: 1.45; }
+  .proj .name { font-weight: 600; color: var(--ink); margin-bottom: 3px; display: block; }
+  .proj .name .tag { color: var(--accent); font-weight: 600; font-size: 8.5pt; margin-left: 4px; }
 
-  .edu-row { display: flex; justify-content: space-between; font-size: 9.5pt; }
+  .edu-row { display: flex; justify-content: space-between; font-size: 9.7pt; }
 
   section.education {
     page-break-inside: avoid; break-inside: avoid;
@@ -201,32 +202,32 @@
   <div class="projects">
     <div class="proj">
       <div class="name">FashionHub <span class="tag">Shopify Plus DTC</span></div>
-      Took a high-growth fashion brand end-to-end on Shopify Plus — bulk-product custom apps that removed catalog ops from the merchandising bottleneck, GraphQL Storefront + Checkout Extensions tailored to the buying flow, AI upsell engine on PDP, and Core Web Vitals + conversion wins at launch.
-      <div class="tech"><b>Tech:</b> Shopify Plus · GraphQL · Node.js · TypeScript · React · OpenAI</div>
+      End-to-end Shopify Plus build for a high-growth fashion brand — custom bulk-ops apps, tailored Checkout Extensions, AI upsell on PDP.
+      <div class="tech"><b>Tech:</b> Shopify Plus · GraphQL · Node.js · React · OpenAI</div>
     </div>
     <div class="proj">
       <div class="name">Olay.com <span class="tag">Global DTC · BigCommerce · 1 yr onsite, USA</span></div>
-      Embedded onsite in the US for a year, working directly with the client team on an enterprise BigCommerce implementation for a global beauty brand. Delivered custom PDP components, merchandising logic and marketing / analytics integrations tuned for the conversion paths that mattered most.
+      Embedded onsite in the US for a year on the enterprise BigCommerce build for a global beauty brand. Owned custom PDP, merchandising and marketing / analytics integrations.
       <div class="tech"><b>Tech:</b> BigCommerce · React · Node.js</div>
     </div>
     <div class="proj">
       <div class="name">Composite One <span class="tag">B2B · BigCommerce</span></div>
-      Took the friction out of complex B2B checkout and account flows. Custom analytics gave operations buying-cycle visibility they couldn't see before; backend APIs sized for enterprise traffic from day one.
+      Rebuilt complex B2B checkout and account flows. Custom analytics + APIs sized for enterprise traffic from day one.
       <div class="tech"><b>Tech:</b> BigCommerce · Next.js · PostgreSQL · TypeScript</div>
     </div>
     <div class="proj">
       <div class="name">Shopify → BigCommerce <span class="tag">Migration</span></div>
-      Moved an enterprise DTC brand off Shopify onto BigCommerce without leaking SEO or losing customer history. Engineered redirect maps preserved every URL; Shopify-only custom functionality rebuilt natively in BigCommerce.
+      Moved an enterprise DTC brand off Shopify onto BigCommerce without leaking SEO. Engineered redirect maps preserved every URL; Shopify-only functionality rebuilt natively.
       <div class="tech"><b>Tech:</b> Shopify · BigCommerce · REST APIs · Node.js</div>
     </div>
     <div class="proj">
       <div class="name">AI Commerce Initiatives <span class="tag">LLM / OpenAI</span></div>
-      Put LLMs to work on the catalog and support surface area — OpenAI description generator unblocking merchandising on every launch, behavior-signal recommendation engine feeding PDP and basket placements, bulk LLM SEO meta generation closing the long-tail content gap, AI chatbot deflecting repetitive support queries.
+      LLMs across catalog and support: OpenAI description generator, behavior-signal recommendations, bulk SEO meta at catalog scale, AI support chatbot.
       <div class="tech"><b>Tech:</b> OpenAI APIs · Node.js · Shopify · BigCommerce</div>
     </div>
     <div class="proj">
       <div class="name">Earlier Products &amp; Platforms <span class="tag">BigStep era</span></div>
-      Shipped MageCube (commercial Magento 2 extensions sold to merchants worldwide), multiple SocialEngine community-platform builds in production, Channelize.io (real-time messaging integration platform embedded by consumer apps), and AlmaHub (alumni management product).
+      MageCube (commercial Magento 2 extensions), SocialEngine community builds, Channelize.io (real-time messaging platform), and AlmaHub (alumni management).
       <div class="tech"><b>Tech:</b> Magento 2 · SocialEngine · PHP · Node.js · Realtime</div>
     </div>
   </div>
