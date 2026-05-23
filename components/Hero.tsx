@@ -51,7 +51,7 @@ export default function Hero() {
             >
               <span className="pill pill-lime">
                 <span className="h-1.5 w-1.5 animate-blink rounded-full bg-lime" />
-                Available — Q2 / 2026
+                Open to Tech Lead / Architect roles · Q2 2026
               </span>
               <span className="pill">Gurgaon, IN — UTC+5:30</span>
             </div>
@@ -93,12 +93,12 @@ export default function Hero() {
                   : "translate-y-4 opacity-0"
               }`}
             >
-              I&apos;m <span className="text-ink">Ankit Bansal</span> — a
-              Technical Lead with 14+ years architecting enterprise commerce on
-              Shopify Plus, BigCommerce, commercetools and Magento. Today I
-              lead <span className="text-ink">Commerce Unifier</span>: a
-              Node.js + TypeScript middleware that abstracts multiple commerce
-              providers behind one contract-driven REST API.
+              Technical Lead, 14+ years building enterprise commerce on
+              Shopify Plus, BigCommerce, commercetools and Magento. I lead{" "}
+              <span className="text-ink">Commerce Unifier</span> — a Node.js
+              + TypeScript middleware that puts one contract in front of any
+              commerce backend, so storefronts ship once and ops swap
+              providers without a rewrite.
             </p>
 
             <div

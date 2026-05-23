@@ -6,11 +6,11 @@ const roles = [
     title: "Technical Lead",
     period: "Jul 2024 — Present",
     bullets: [
-      "Leading Shopify Plus, BigCommerce and commercetools enterprise implementations end-to-end.",
-      "Architecting scalable middleware and headless commerce backends in Node.js / TypeScript.",
-      "Driving AI-based recommendation, personalization and SEO automation initiatives.",
-      "Designing Next.js headless storefronts with multi-locale, multi-currency support.",
-      "Mentoring development teams, owning production deploys on GCP, running code reviews.",
+      "Take Shopify Plus, BigCommerce and commercetools enterprise implementations from kickoff through production launch — owning the architecture, the team, and the post-deploy verification.",
+      "Architect headless commerce backends in Node.js / TypeScript that the storefront builds against once, not per provider — so adding a new commerce backend is a transform, not a frontend rewrite.",
+      "Drive AI initiatives into the surfaces where they move the needle: recommendation engines feeding PDP and basket placements, SEO meta generation at catalog scale, support chatbots that deflect repetitive queries.",
+      "Design Next.js headless storefronts that expand into new locales, currencies and markets without an engineering re-architecture each time.",
+      "Mentor senior and mid-level engineers; own production deploys on GCP end-to-end including post-deploy verification and incident response.",
     ],
   },
   {
@@ -18,11 +18,11 @@ const roles = [
     title: "Technical Lead / Senior Developer",
     period: "Jun 2018 — Jul 2024",
     bullets: [
-      "Delivered enterprise B2B and DTC eCommerce platforms for global brands.",
-      "Built custom Shopify apps, BigCommerce integrations and headless storefronts.",
-      "Developed AI-assisted search optimization and smart merchandising solutions.",
-      "Integrated ERP, CRM, payment gateways and marketing automation systems.",
-      "Led digital transformation across multiple geographies and business units.",
+      "Delivered B2B and DTC commerce platforms for global brands that held up under enterprise traffic from day one.",
+      "Built custom Shopify apps, BigCommerce integrations and headless storefronts that gave merchandising teams operational leverage they didn't have before.",
+      "Shipped AI-assisted search optimization and smart merchandising into live shopper journeys, not just admin tooling.",
+      "Wired ERP, CRM, payment gateway and marketing automation systems into the commerce backbone so business teams stopped working in disconnected silos.",
+      "Led digital transformation across multiple geographies and business units — coordinating engineering, product and stakeholders across timezones.",
     ],
   },
   {
@@ -30,20 +30,20 @@ const roles = [
     title: "Technical Lead / Developer",
     period: "Dec 2009 — May 2018",
     bullets: [
-      "Led Magento 2 and PHP-based eCommerce builds for product and service businesses.",
-      "Developed reusable extensions, plugins and integrations published as commercial products.",
-      "Architected SEO-friendly, high-performance systems handling significant catalog and traffic loads.",
+      "Led Magento 2, SocialEngine and PHP-based eCommerce and community-platform builds — from architecture decisions through production launch.",
+      "Productized internal work into reusable extensions, plugins and integrations sold commercially — turning project IP into recurring revenue.",
+      "Architected SEO-friendly, high-performance systems that held under significant catalog sizes and traffic loads.",
     ],
   },
 ];
 
 const flagshipBullets = [
-  "Architected the unified backend abstracting BigCommerce + commercetools behind one REST API — provider chosen per request via x-commerce-provider header.",
-  "Built a custom transform SDK (@commerceunifier/transform-sdk) that normalizes heterogeneous provider responses into a JSON-Schema-driven contract.",
-  "Integrated multi-CMS (Contentstack, Payload CMS), Razorpay payments, and GCS for media, sitemaps and product feed assets.",
-  "Engineered the SEO sitemap pipeline — category, product and CMS sitemaps published to GCP with cache-bust automation across markets.",
-  "Implemented JWT auth, webhook-driven cache invalidation and Prisma/PostgreSQL persistence for carts, customer mappings and provider config.",
-  "Delivered Google Shopping feeds, bulk translation pipelines (Google Translate) and BigCommerce channel sync tooling.",
+  "Collapsed multi-backend complexity into one API — architected the unified middleware over BigCommerce and commercetools, with the backend selected per request via the x-commerce-provider header. Storefront teams build against a single contract.",
+  "Decoupled storefronts from provider shapes with a custom transform SDK (@commerceunifier/transform-sdk) that normalizes heterogeneous provider responses into a JSON-Schema-driven contract — adding a new provider is now a transform, not a frontend rewrite.",
+  "Unified content, payments and asset hosting under one contract: Contentstack and Payload CMS, Razorpay, and Google Cloud Storage for media, sitemaps and product feeds — so launching a new market doesn't kick off a fresh integration project.",
+  "Made multi-market SEO operable by building a sitemap pipeline that publishes category, product and CMS sitemaps to GCP with cache-bust automation across locales — ops own it, engineering doesn't get paged for routine updates.",
+  "Built the runtime to hold under traffic with JWT auth, webhook-driven cache invalidation and Prisma / PostgreSQL persistence for carts, customer mappings and provider configuration.",
+  "Closed the merchandising loop with Google Shopping product feeds, bulk Google Translate pipelines and BigCommerce channel sync tooling — so new markets and channels go live without a separate engineering spike.",
 ];
 
 const flagshipStack = [

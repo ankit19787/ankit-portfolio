@@ -90,10 +90,10 @@ export default function About() {
               </Reveal>
               <Reveal delay={120}>
                 <div className="font-serif text-4xl text-ink md:text-5xl">
-                  <Counter to={4} />
+                  <Counter to={10} suffix="+" />
                 </div>
                 <div className="mt-1 font-mono text-[11px] uppercase tracking-wider text-ink-dim">
-                  Platforms in production
+                  Production releases shipped
                 </div>
               </Reveal>
               <Reveal delay={240}>

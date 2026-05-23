@@ -8,7 +8,7 @@ const projects = [
     sub: "Shopify Plus DTC platform",
     tag: "Shopify Plus",
     summary:
-      "End-to-end Shopify Plus build for a high-growth fashion brand. Custom apps for bulk product ops, GraphQL Storefront integrations, Checkout Extensions and an AI upsell engine. Shipped Core Web Vitals + conversion wins.",
+      "Took a high-growth fashion brand end-to-end on Shopify Plus. Built bulk-product custom apps that took catalog ops off the merchandising team's bottleneck path, wired GraphQL Storefront integrations and Checkout Extensions tailored to the buying flow, and shipped an AI upsell engine on the product detail page — landing the launch with Core Web Vitals and conversion wins.",
     stack: ["Shopify Plus", "GraphQL", "Node.js", "TypeScript", "React", "OpenAI"],
     span: "md:col-span-7",
   },
@@ -18,7 +18,7 @@ const projects = [
     sub: "Global DTC · BigCommerce · 1 year onsite, USA",
     tag: "BigCommerce",
     summary:
-      "Spent a year onsite in the US partnering directly with the client team on an enterprise BigCommerce implementation for a global beauty brand. Built custom PDP components, merchandising logic, and marketing / analytics integrations optimized for performance and conversion.",
+      "Embedded onsite in the US for a year, working directly with the client team on an enterprise BigCommerce implementation for a global beauty brand. Delivered custom PDP components, merchandising logic and marketing / analytics integrations — tuned for the conversion paths that mattered most to the brand.",
     stack: ["BigCommerce", "React", "Node.js"],
     span: "md:col-span-5",
   },
@@ -28,7 +28,7 @@ const projects = [
     sub: "B2B commerce on BigCommerce",
     tag: "B2B",
     summary:
-      "Enhanced checkout and account flows for complex B2B journeys. Custom analytics integrations and high-volume backend APIs that hold up under enterprise traffic.",
+      "Took the friction out of complex B2B checkout and account flows. Custom analytics integrations gave the operations team buying-cycle visibility they couldn't see before, and the backend APIs were sized for enterprise traffic from day one.",
     stack: ["BigCommerce", "Next.js", "PostgreSQL", "TypeScript"],
     span: "md:col-span-5",
   },
@@ -38,7 +38,7 @@ const projects = [
     sub: "Zero-data-loss platform migration",
     tag: "Migration",
     summary:
-      "Full platform migration for an enterprise DTC brand. Preserved URL structure and redirect maps to protect organic rankings; rebuilt custom Shopify functionality natively within BigCommerce.",
+      "Moved an enterprise DTC brand off Shopify onto BigCommerce without leaking SEO or losing customer history. Preserved every URL with engineered redirect maps to protect organic rankings, and rebuilt the brand's Shopify-only custom functionality natively in BigCommerce.",
     stack: ["Shopify", "BigCommerce", "REST APIs", "Node.js"],
     span: "md:col-span-7",
   },
@@ -48,18 +48,18 @@ const projects = [
     sub: "LLM-powered merchandising",
     tag: "AI / LLMs",
     summary:
-      "Built an OpenAI-powered product description generator, a behavior-signal recommendation engine, an AI chatbot for support / order queries, and bulk LLM-driven SEO meta generation across large catalogs.",
+      "Put LLMs to work across the catalog and support surface area. An OpenAI-powered description generator unblocked merchandising teams on every new launch, a behavior-signal recommendation engine fed personalized PDP and basket placements, bulk LLM SEO meta generation closed the long-tail content gap, and an AI chatbot deflected repetitive order and support queries.",
     stack: ["OpenAI APIs", "Node.js", "Shopify", "BigCommerce"],
     span: "md:col-span-7",
   },
   {
     n: "06",
-    title: "MageCube · Channelize.io · AlmaHub",
-    sub: "Commercial extensions & platforms",
+    title: "Earlier products & platforms",
+    sub: "MageCube · SocialEngine · Channelize.io · AlmaHub",
     tag: "Earlier work",
     summary:
-      "Shipped commercial Magento 2 extensions (MageCube), a real-time messaging integration platform (Channelize.io), and an alumni management product (AlmaHub) during the BigStep years.",
-    stack: ["Magento 2", "PHP", "Node.js", "Realtime"],
+      "Shipped commercial Magento 2 extensions (MageCube) sold to merchants worldwide, multiple SocialEngine community platform builds in production, a real-time messaging integration platform (Channelize.io) embedded by consumer apps, and the AlmaHub alumni management product — all during the BigStep years.",
+    stack: ["Magento 2", "SocialEngine", "PHP", "Node.js", "Realtime"],
     span: "md:col-span-5",
   },
 ];
