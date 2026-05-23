@@ -36,9 +36,10 @@ export default function Reveal({
     return () => io.disconnect();
   }, []);
 
+  const Tag = As as React.ElementType;
+
   return (
-    // @ts-expect-error dynamic tag
-    <As
+    <Tag
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
       className={`transition-all duration-700 ease-out ${
@@ -46,6 +47,6 @@ export default function Reveal({
       } ${className}`}
     >
       {children}
-    </As>
+    </Tag>
   );
 }
