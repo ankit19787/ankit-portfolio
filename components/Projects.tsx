@@ -132,14 +132,18 @@ export default function Projects() {
         <div className="mt-16 grid gap-5 md:grid-cols-12">
           <Reveal className="md:col-span-12">
             <TiltCard className="h-full rounded-2xl" intensity={3}>
-              <article className="bento bento-hover relative overflow-hidden p-7 md:p-10">
+              <article className="bento bento-hover relative overflow-hidden border-ember/25 bg-canvas-raised p-7 md:p-10">
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-ember/10 blur-3xl"
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ember/[0.05] via-transparent to-transparent"
                 />
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -left-40 -bottom-40 h-[24rem] w-[24rem] rounded-full bg-lime/[0.04] blur-3xl"
+                  className="pointer-events-none absolute -right-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-ember/20 blur-3xl"
+                />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute -left-40 -bottom-40 h-[24rem] w-[24rem] rounded-full bg-lime/[0.06] blur-3xl"
                 />
 
                 <div className="relative grid gap-10 md:grid-cols-12">
@@ -185,12 +189,12 @@ export default function Projects() {
                       {flagship.stats.map((s) => (
                         <div
                           key={s.label}
-                          className="rounded-xl border border-ink-line bg-canvas/50 p-4"
+                          className="rounded-xl border border-ember/20 bg-gradient-to-br from-ember/[0.08] to-ember/[0.02] p-4 transition hover:border-ember/40"
                         >
-                          <div className="font-serif text-3xl text-ink md:text-4xl">
+                          <div className="font-serif text-3xl text-ember md:text-4xl">
                             {s.n}
                           </div>
-                          <div className="mt-1 font-mono text-[10px] uppercase tracking-wider text-ink-dim">
+                          <div className="mt-1 font-mono text-[10px] uppercase tracking-wider text-ink-muted">
                             {s.label}
                           </div>
                         </div>
