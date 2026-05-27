@@ -94,11 +94,11 @@ export default function Hero() {
               }`}
             >
               Technical Lead, 14+ years building enterprise commerce on
-              Shopify Plus, BigCommerce, commercetools and Magento. I lead{" "}
-              <span className="text-ink">Commerce Unifier</span> — a Node.js
-              + TypeScript middleware that puts one contract in front of any
-              commerce backend, so storefronts ship once and ops swap
-              providers without a rewrite.
+              Shopify Plus, BigCommerce, commercetools and Magento. Currently
+              shipping <span className="text-ink">Marketing Automation OS for
+              Shopify brands</span> — a milestone-architected n8n engine that
+              unifies Shopify data, AI content, social, ads and retention
+              into one auditable, multi-tenant platform.
             </p>
 
             <div
@@ -141,11 +141,152 @@ export default function Hero() {
           </div>
         </div>
 
+        <FeaturedProductBlock />
         <ApiContractBlock />
       </div>
 
       <Marquee />
     </section>
+  );
+}
+
+function FeaturedProductBlock() {
+  const stats = [
+    { n: "13", label: "milestones shipped" },
+    { n: "25+", label: "workflows live" },
+    { n: "14", label: "journey scenes" },
+    { n: "11", label: "platforms integrated" },
+  ];
+  const integrations = [
+    "Shopify",
+    "Klaviyo",
+    "Anthropic Claude",
+    "Meta Graph",
+    "LinkedIn",
+    "TikTok",
+    "Google Ads",
+    "Creatomate",
+    "Retell AI",
+    "Cloudflare R2",
+    "Supabase",
+    "Slack",
+  ];
+
+  return (
+    <div className="relative mt-20 md:mt-24">
+      <div className="relative overflow-hidden rounded-3xl border border-ember/30 bg-canvas-raised p-7 md:p-10">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ember/[0.08] via-transparent to-transparent"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-40 -top-40 h-[30rem] w-[30rem] rounded-full bg-ember/20 blur-3xl"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -left-40 -bottom-40 h-[24rem] w-[24rem] rounded-full bg-lime/[0.06] blur-3xl"
+        />
+
+        <div className="relative grid gap-10 md:grid-cols-12">
+          <div className="md:col-span-7">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="pill pill-ember">
+                <span className="h-1.5 w-1.5 animate-blink rounded-full bg-ember" />
+                Featured Product
+              </span>
+              <span className="pill pill-lime">Fully automated</span>
+              <span className="pill">Production-ready</span>
+            </div>
+
+            <h2 className="display-lg mt-6">
+              Marketing Automation OS
+              <br />
+              <span className="italic text-ember">for Shopify brands.</span>
+            </h2>
+
+            <p className="text-body mt-6 max-w-2xl">
+              A milestone-architected n8n engine that unifies Shopify commerce
+              data, AI content generation, organic social, blog publishing,
+              video rendering, ads monitoring, abandoned-cart sequences and
+              optional Retell AI voice outreach — into one auditable,
+              human-in-the-loop platform. Every workflow keys on{" "}
+              <span className="font-mono text-sm text-ember">store_id</span>{" "}
+              so adding a second store is a config change, not a re-build.
+            </p>
+
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <a href="#projects" className="btn-primary group/cta">
+                See the build
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="transition-transform group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"
+                >
+                  <path d="M7 17L17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <a href="#contact" className="btn-ghost">
+                Build one for us
+              </a>
+            </div>
+
+            <div className="mt-7">
+              <div className="font-mono text-[11px] uppercase tracking-wider text-ink-dim">
+                Integrated platforms
+              </div>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {integrations.map((t) => (
+                  <span
+                    key={t}
+                    className="inline-flex items-center rounded-full border border-ink-line bg-canvas/60 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-ink-muted"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-5 md:border-l md:border-ink-line md:pl-10">
+            <div className="grid grid-cols-2 gap-3">
+              {stats.map((s) => (
+                <div
+                  key={s.label}
+                  className="rounded-xl border border-ember/25 bg-gradient-to-br from-ember/[0.10] to-ember/[0.02] p-4 transition hover:border-ember/50"
+                >
+                  <div className="font-serif text-3xl text-ember md:text-4xl">
+                    {s.n}
+                  </div>
+                  <div className="mt-1 font-mono text-[10px] uppercase tracking-wider text-ink-muted">
+                    {s.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 rounded-xl border border-ember/30 bg-ember/[0.06] p-4">
+              <div className="font-mono text-[10px] uppercase tracking-wider text-ember">
+                Architecture
+              </div>
+              <div className="mt-1 text-sm leading-relaxed text-ink-muted">
+                Modular by milestone, multi-tenant on{" "}
+                <span className="text-ink">store_id</span>, human-in-the-loop
+                approval before every publish, central{" "}
+                <span className="text-ink">do-not-contact</span> table
+                enforcing CAN-SPAM / GDPR / CCPA / TCPA.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -200,7 +341,7 @@ function ApiContractBlock() {
   return (
     <div className="relative mt-20 grid gap-6 md:mt-28 md:grid-cols-12">
       <div className="md:col-span-4">
-        <div className="section-number">// What I&apos;m building</div>
+        <div className="section-number">// Also shipping — Commerce Unifier</div>
         <h3 className="display-md mt-3">
           One API.
           <br />
