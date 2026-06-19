@@ -16,6 +16,12 @@ const builds = [
   { id: "LS7yKKEQEBk", title: "Product Listing & SEO Agent", tag: "Node.js" },
   { id: "fHoRLGvIvuU", title: "Personalization Agent", tag: "Node.js" },
   { id: "gLhE7Ke5as8", title: "Ads & Creative Agent", tag: "Node.js" },
+  { id: "8uTcraImCSI", title: "Dynamic Pricing Agent", tag: "Node.js" },
+  { id: "43pu4f6gHUo", title: "Inventory & Forecasting Agent", tag: "Node.js" },
+  { id: "EzMHHXy00Ko", title: "Email & Retention Agent", tag: "Node.js" },
+  { id: "ACXt-R1QUGE", title: "Reviews & Reputation Agent", tag: "Node.js" },
+  { id: "sFECquqyHdY", title: "Fraud & Risk Agent", tag: "Node.js" },
+  { id: "VydGQqTVSPQ", title: "Analytics Agent", tag: "Node.js" },
 ];
 
 function PlayIcon() {
@@ -44,9 +50,9 @@ export default function Videos() {
             <span className="italic text-ember">on camera.</span>
           </h2>
           <p className="text-body mt-6 max-w-2xl">
-            A build series on YouTube — I design and ship real AI agents for
-            ecommerce in Node.js, running on a local LLM (no API keys), one
-            episode at a time.
+            A complete build series on YouTube — I design and ship 10 real AI
+            agents for ecommerce in Node.js, each running on a local LLM with no
+            API keys. All ten episodes are live.
           </p>
         </Reveal>
 
