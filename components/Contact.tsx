@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="container-px relative">
         <div className="grid gap-12 md:grid-cols-12">
           <Reveal className="md:col-span-7">
-            <div className="section-number">05 / Contact</div>
+            <div className="section-number">06 / Contact</div>
             <h2 className="display-xl mt-4">
               Let&apos;s ship
               <br />
